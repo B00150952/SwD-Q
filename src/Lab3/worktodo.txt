@@ -1,0 +1,75 @@
+Person 1: Behavior Analysis & Documentation
+Tasks:
+
+Step 1: Fully-Dressed Use Case
+
+Take one of your main use cases (e.g., "View Real-Time Data" or "Record Weather Data")
+Expand it with full details including:
+
+Preconditions
+Postconditions
+Main Success Scenario (step-by-step)
+Alternative flows
+Exception flows
+
+
+
+
+Step 3: High-level Activity Diagram
+
+Create activity diagram showing the flow of the system
+Include decision points, parallel activities
+Show user actions and system responses
+
+
+Step 4: High-level State Diagram
+
+Model the states of the weather station system
+States could be: Idle, DisplayingRealTime, DisplayingHourly, DisplayingDaily, RecordingData, TransmittingData
+Show transitions between states
+
+
+Document Formatting
+
+Add Cover Sheet
+Create Table of Contents
+Create Table of Figures
+Compile all sections into final document
+Add page numbers and formatting
+
+
+
+
+Person 2: Design Phase & Interaction Analysis
+Tasks:
+
+Step 2: High-level Sequence Diagram
+
+Create sequence diagram for main use case
+Show interactions between: User, Button, MicroController, Sensor, Display, MemoryBank, SatelliteLink
+Keep it high-level (analysis phase)
+
+
+Step 5: Detailed Sequence Diagrams (3-4 diagrams)
+
+Sequence 1: User views real-time data
+Sequence 2: System records periodic data
+Sequence 3: User views historical data (hourly/daily)
+Sequence 4 (optional): System transmits data via satellite
+Include actual method calls like readSensor(), displayReading(), storeData()
+
+
+Step 6: Refined Class Diagram
+
+Take the conceptual model from Lab 2
+Add methods/operations to each class (e.g., MicroController.readSensor(), Display.showReading())
+Add attributes (e.g., TemperatureReading.value, TemperatureReading.timestamp)
+Refine associations with proper navigation arrows
+Add visibility (+public, -private, #protected)
+
+
+Implementation Recommendations & Notes
+
+Based on your design, suggest implementation approach
+Recommend design patterns (Strategy pattern for sensors)
+Note any technical considerations

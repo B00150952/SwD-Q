@@ -19,5 +19,5 @@ def divide(x, y):
     return x/y
 
 print(add(10,5))
-print("Hello from python!")
+print("Hello from pythin!")
 print("Your Python version is:"  + sys.version)
